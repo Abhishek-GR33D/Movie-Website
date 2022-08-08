@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  
+
+</head>
+<body>
+  <div class="container-fluid text-left container-max-width">
+      <div style="display:flex; max-width: 100%;" >
+        <div>
+          <h2>{{title}}</h2>
+        </div>
+        <!--Navigation bar-->
+        <div class="navbar-wrapper">
+          <a href="#" class="navbar__button__link"><span class="navbar__button" routerLink="/">Popular</span></a>
+          <a href="#" class="navbar__button__link" routerLink="/new"><span class="navbar__button" >New</span></a>
+          <a href="#" class="navbar__button__link"><span class="navbar__button" eoyerLink="/">Watchlist</span></a>
+
+          <!--Search bar-->
+          <div class="container">
+            <form class="search-bar" action="http://www.google.com/search" method="get">
+              <button type="button">🔍</button>
+              <input type="text" placeholder="Search for movies">
+            </form>
+          </div>
+
+          <a href="#" class="navbar__button__link" routerLink="/login"><span class="navbar__button">Login</span></a>
+          <a href="#" class="navbar__button__link" style="margin-right:10px;" routerLink="/login"><span class="navbar__button">Favorite</span></a>
+
+          <!--Dropdown menu-->
+          <div  class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Features
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#" class="dropdown-item" data-toggle="dropdown">Your Profile</a>
+              <a href="#" class="dropdown-item" data-toggle="dropdown">Downloads</a>
+              <a href="#" class="dropdown-item" data-toggle="dropdown">Preference</a>
+              <a href="#" class="dropdown-item" data-toggle="dropdown">About us</a>
+              <a href="#" class="dropdown-item" data-toggle="dropdown">Feedback</a>
+              <a href="#" class="dropdown-item" data-toggle="dropdown">Report Problem</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </div>
+  
+</body>
+</html>
+
+
+
+<router-outlet></router-outlet>

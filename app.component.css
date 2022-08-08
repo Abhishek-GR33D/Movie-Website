@@ -1,0 +1,53 @@
+h2
+{
+    color: gold;
+    padding-top: 15px;
+}
+
+.navbar-wrapper
+{
+    display: flex;
+    padding: 20px;
+}
+
+.navbar__button__link
+{
+    width:120px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.search-bar
+{
+    width: 80%;
+    max-width:700px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    padding: 5px 5px;
+    background-color:rgba(255, 255, 255, 0.479);
+}
+
+.search-bar input
+{
+    background: transparent;
+    flex:1;
+    border: 0;
+    outline:none;
+    padding-bottom: 12px 7px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+::placeholder
+{
+    color: #cac7ff;
+}
+
+.search-bar button
+{
+    border-radius: 4rem;
+    cursor: pointer;
+    border: none;
+}
